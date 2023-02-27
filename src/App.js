@@ -3,13 +3,22 @@ import './App.css';
 import Greet from './components/Greet';
 import Home from './pages/Home'
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import EventBinding from './components/EventBinding';
+import ParentComponent from './components/ParentComponent';
+import About from './components/About';
 
 function App() {
   return (
     <div className="App">
-      <Greet/>
+      {/* <Greet/> */}
       <Home />
-      <Counter/>
+      {/* <Counter/> */}
+      {/* <FunctionClick/> */}
+      {/* <EventBinding/> */}
+      {/* <ParentComponent/> */}
+      {/* <About/> */}
+      
     </div>
   );
 }
