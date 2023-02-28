@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 
-
-export class About extends Component {
+ class About extends Component {
    
   render() {
     
     return (
-      <div>
-        <div>Welcome to about page</div>
+      <div><h1> this is about page</h1>
+       
       </div>
     )
   }

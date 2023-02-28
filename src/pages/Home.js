@@ -13,24 +13,36 @@ class Home extends React.Component{
   constructor(props){
     super(props)
     this.state={
-      isLoggedIn:false
+      isLoggedIn:true
     }
+  
 }
  render(){
-  <p>This is Home Page</p>
-  //using if else
-//   if(this.state.isLoggedIn){
-//     return (
-//         <div><About/></div>
-//     )
-// }
-// else{
-//     return <div>Get lost</div>
-// }
+ 
+  
+//   using if else
+  if(this.state.isLoggedIn){
+    return (
+        <div>
+          <Title heading="About page" />
+          <p> <Title description="welcome to about page"/></p>
+         
+          <About/>
+          </div>
+    )
+}
+else{
+    return <div>
+      <Title heading="home page" />
+      <p><Title description="welcome to home page"/></p>
+      
+      </div>
+}
 //using ternary operator
-return(
-  this.state.isLoggedIn ? <h1><About/></h1> : <h1>This is Home page</h1>
-)
+// return(
+//   this.state.isLoggedIn ? <h1><About/></h1> : <h1>This is Home page</h1>
+  
+// )
 //using shortcircuit method
 // return(
 //   this.state.isLoggedIn && <h1><About/></h1>
